@@ -9,5 +9,5 @@ import com.example.ipl_dashboard.model.Team;
 public interface TeamRepository extends CrudRepository<Team, Long>{
 
 	Team findByTeamName(String teamName);
-	
+	void deleteByTeamName(String teamName);
 }
